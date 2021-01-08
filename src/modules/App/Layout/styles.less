@@ -1,0 +1,22 @@
+@footer-height: 20vh;
+@header-height: 64px;
+@body-padding: 20px;
+// TODO hardcoded 30px
+@body-height: calc(100vh - @header-height - 30px - @footer-height - 2 * @body-padding);
+@main-width: 100%;
+@main-padding: 0px 30px;
+
+.layout {
+  background: white;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  padding: @body-padding;
+
+  .body {
+    min-height: @body-height;
+    width: 100%;
+  }
+}

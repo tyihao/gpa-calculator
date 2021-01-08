@@ -1,0 +1,74 @@
+@import (reference) "../styles";
+
+.header {
+  background-color: rgba(255, 255, 255, 0) !important;
+  z-index: 1;
+  .menu {
+
+  }
+  .title {
+
+  }
+  .menu-item {
+    margin-left: 10px !important;
+    &:hover {
+      background-color: rgba(114, 95, 137, 0) !important;
+    }
+    :hover {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #d0d0d0;
+    }
+  }
+  .icon-only {
+    margin-left: 10px;
+  }
+
+  .icon {
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width: 1450px) {
+  .icon-only {
+    display: none;
+  }
+}
+
+
+.text {
+  color: black !important;
+}
+
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  color: black !important;
+}
+
+.ant-menu .ant-menu-item-selected {
+  color: transparent !important;
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item > a::before {
+  bottom: 0;
+  color: white !important;
+  background-color: white !important;
+}
+.ant-menu-item .ant-menu-submenu-horizontal .ant-menu-overflowed-submenu {
+  bottom: 0;
+  color: white !important;
+  background-color: white !important;
+}
+
+.ant-menu-item .ant-menu-submenu-horizontal .ant-menu-overflowed-submenu .ant-menu-item-selected {
+  bottom: 0;
+  color: white !important;
+  background-color: white !important;
+  ::before {
+    bottom: 0;
+    color: white !important;
+    background-color: white !important;
+  }
+}
+
+
