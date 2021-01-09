@@ -73,12 +73,12 @@
   },
   "scripts": {
     "start": "craco start",
-    "build:prod": "env-cmd -f .env.production craco build",
-    "build": "craco build",
+    "build:prod": "env-cmd -f .env.production craco docs",
+    "build": "craco docs",
     "test": "craco test",
     "eject": "craco eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d docs"
   },
   "eslintConfig": {
     "extends": "react-app"
