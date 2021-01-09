@@ -1,5 +1,5 @@
 {
-  "homepage": "http://tyihao.github.io/gpa-calculator",
+  "homepage": ".",
   "name": "gpa-calculator",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,7 @@
     "@types/less": "^3.0.2",
     "@types/react-select": "^3.0.28",
     "antd": "^4.4.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "camelcase-keys": "^6.1.2",
     "connected-react-router": "^6.6.1",
     "emotion": "^10.0.27",
@@ -73,12 +73,12 @@
   },
   "scripts": {
     "start": "craco start",
-    "build:prod": "env-cmd -f .env.production craco docs",
-    "build": "craco docs",
+    "build:prod": "env-cmd -f .env.production craco build",
+    "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs"
+    "predeploy": "craco build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
