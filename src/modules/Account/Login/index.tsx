@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { Button, Form, Input, Modal, Typography } from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import styles from "./styles.less";
-import { IsLoggedInCall, SignUpCall } from "@/feature/account/action";
 
 const { Title, Paragraph } = Typography;
 
@@ -15,12 +14,10 @@ export default () => {
 
   const onSubmitLogin = () => {
     const { email, password } = form.getFieldsValue();
-    dispatch(IsLoggedInCall({ email, password }));
   };
 
   const onSubmitRegister = () => {
     const { email, password } = form.getFieldsValue();
-    dispatch(SignUpCall({ email, password }));
   };
 
   return (

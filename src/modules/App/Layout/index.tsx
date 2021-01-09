@@ -13,9 +13,9 @@ const AppLayout: FC = ({ children }) => {
     <Layout className={styles.layout}>
       <Header />
       {/* Uncomment for some magic*/}
-      <audio controls autoPlay>
-        <source src={Music} type="audio/mpeg"></source>
-      </audio>
+      {/*<audio controls autoPlay>*/}
+      {/*  <source src={Music} type="audio/mpeg"></source>*/}
+      {/*</audio>*/}
       <Content className={styles.content}>
         <main className={styles.body}> {children} </main>
       </Content>

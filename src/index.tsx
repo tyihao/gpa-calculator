@@ -10,7 +10,7 @@ import "handsontable/dist/handsontable.full.css";
 // Redux Store
 import store from "./feature/store";
 
-document.title = `Career Pace`;
+document.title = `GPA Calculator`;
 
 ReactDOM.render(
   <Provider store={store}>

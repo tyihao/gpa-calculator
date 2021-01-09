@@ -8,7 +8,7 @@ export default () => {
   return (
     <Footer className={styles.container}>
       <Typography.Title className={styles.title}>
-        Copyright © {getCopyrightYear()} Career Pace by WXYZ Tech. All rights
+        Copyright © {getCopyrightYear()} GPA Calculator by 一起 Tech. All rights
         reserved.
       </Typography.Title>
     </Footer>

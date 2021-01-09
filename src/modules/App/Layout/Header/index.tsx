@@ -17,7 +17,6 @@ import { RootState } from "@/feature/rootState";
 const { Header } = Layout;
 
 export default () => {
-  const isLoggedIn = useSelector((state: RootState) => state.login.isLoggedIn);
   return (
     <Header className={styles.header}>
       <div className="logo" />
@@ -35,12 +34,6 @@ export default () => {
                 <span className={styles.iconOnly}>Home</span>
               </Link>
             </Menu.Item>
-            <Menu.Item key="/about" className={styles.menuItem}>
-              <Link to="/about">
-                <ContactsOutlined className={styles.icon} />
-                <span className={styles.iconOnly}>About</span>
-              </Link>
-            </Menu.Item>
             <Menu.Item key="/dashboard" className={styles.menuItem}>
               <Link to="/dashboard">
                 <BarChartOutlined className={styles.icon} />
@@ -48,9 +41,6 @@ export default () => {
               </Link>
             </Menu.Item>
           </Menu>
-        </Col>
-        <Col xs={8} sm={3}>
-          {isLoggedIn ? <Profile /> : <Login />}
         </Col>
       </Row>
     </Header>

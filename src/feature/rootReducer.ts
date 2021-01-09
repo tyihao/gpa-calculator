@@ -1,10 +1,8 @@
 import { combineReducers } from "redux";
-import { OptReducer } from "./optimise";
-import { login } from './account/reducer'
+import { ScoreReducer } from "./scores";
 
 const rootReducer = combineReducers({
-  opt: OptReducer,
-  login,
+  score: ScoreReducer,
 });
 
 export default rootReducer;

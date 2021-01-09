@@ -1,7 +1,5 @@
-import { OptType } from "@/feature/optimise";
-import { LoginState } from './account/types'
+import { ScoreType } from "@/feature/scores";
 
 export type RootState = {
-  opt: OptType.Store,
-  login: LoginState,
+  score: ScoreType.results,
 };
